@@ -6,7 +6,12 @@
   height: 20px;
   animation: spin 2s linear infinite;
   margin-top: 30px;
-  margin-left: 150px;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes spin {
