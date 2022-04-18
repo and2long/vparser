@@ -12,11 +12,10 @@ export const App = () => {
 
   async function onSubmit(e) {
     e.preventDefault()
-    if (value.indexOf("http") !== -1 && value.indexOf("html") !== -1) {
+    if (value.indexOf("v.qq.com/x/page") !== -1 && value.indexOf("html") !== -1) {
       // 截取vid
       try {
         const vid = value.substring(value.lastIndexOf("/") + 1, value.length - 5)
-        console.log(vid)
         setLoading(true)
         const response = await axios({
           method: 'get',
